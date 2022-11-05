@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+body {
+    background-color: #f4f5f7; 
+}
+
+hr {
+    background-color: white;
+}
+
+
+
+/*=================================> Getting Started Page* <===========================*/
+.container {
+    height: 100vh;
+    background: url("https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    filter: blur(4px);
+
+}
+
+.div-logo {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+
+.div-logo .logo {
+    border-radius: 100%;
+}
+
+.get-started {
+    position: absolute;
+    top: 55%;
+    left: 40%;
+
+}
+
+
+
+.get-started h1 {
+    margin-bottom: 20px;
+}
+
+.get-started button {
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #e01a42;
+    color: white;
+    cursor: pointer;
+    font-size: medium;
+}
+
+/*=======================> Main Page <=============================== */
+.navbar {
+    display: flex;
+    font-size: 1.5rem;
+    background: url("https://images.pexels.com/photos/256318/pexels-photo-256318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    position: fixed;
+    width: 100%;
+    top: 1px;
+    z-index: 5;
+}
+
+
+.navbar .language-btn {
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    background-color: white;
+    font-size: 1.35rem;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.language-btn:hover {
+    background-color: gray;
+    color: whi;
+}
+
+.nav-image {
+    text-align: center;
+
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar .nav-logo {
+    border-radius: 100%;
+    width: 40%;
+
+}
+
+.navbar .about,
+select,
+.search-box {
+    cursor: pointer;
+}
+
+.nav-list-items {
+    width: 100%;
+
+    margin: auto;
+}
+
+.nav-list-items select {
+    font-size: 1.5rem;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.nav-list-items .search-box {
+    width: 20rem;
+    height: 30px;
+    padding-left: 40px;
+
+}
+
+.nav-list-items .fa-magnifying-glass {
+    position: absolute;
+    top: 33px;
+    left: 480px;
+    font-size: medium;
+    color: black;
+}
+
+.head-viewall a {
+    text-decoration: none;
+}
+
+#hamburger,
+.sidebar {
+    display: none;
+
+}
+
+/*==========================================Main Section========================================*/
+main {
+    margin-top: 80px;
+}
+
+.special-dishes-div{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    
+    /* background-color: #e1e7f3; */
+}
+
+.head-viewall{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.head-viewall i{
+   margin-left: 10px;
+}
+
+.head-viewall h3{
+    margin-top: -8px;
+ }
+
+.special-title, .all-dishes-title{
+    font-size: 2rem;
+    font-weight:bolder;
+    
+}
+.special-dish, .special-dish-2{
+    margin-top: 10px;
+    width: 20%;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.special-dish:hover {
+    background-color: rgb(168, 162, 162);
+}
+.special-dish-2:hover {
+    background-color: rgb(168, 162, 162);
+}
+
+.special-dish .special-dish-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.special-dish-2 .special-dish-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: darkgray;
+    padding: 10px;
+}
+
+.footer ol{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    
+}
+
+
+.footer button {
+    width: 50%;
+    height: 2rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.footer button:hover {
+    background-color: grey;
+}
+
+
+/*===============================>All Dishes Page<=========================================*/
+
+.all-dishes-div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.all-dishes-title{
+    text-align: center;
+}
+
+#back-arrow {
+    display: none;
+    text-decoration: none;
+}
+/*===============================Single Dish<================================================*/
+.img-ingredients {
+    display: flex;
+    
+}
+
+
+
+.dish-image{
+    padding: 40px;
+    width: 40%;
+}
+
+.dish-image h1{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.dish-image i {
+    display: none;
+}
+
+.image-dish{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.ingredients-information{
+    width: 60%;
+    text-align: center;
+    padding: 35px;
+}
+
+
+@media screen and (max-width: 600px) {
+    /*=====================> Mobile Design <====================*/
+    body {
+        background-color: #f4f5f7; 
+    }
+
+    /*=================================> Getting Started Page* <===========================*/
+    .container {
+        background: url("https://images.pexels.com/photos/256318/pexels-photo-256318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-size: 100%;
+    }
+
+
+    .div-logo {
+        top: 40%;
+        left: 25%;
+    }
+
+    .get-started {
+        top: 70%;
+        left: 25%;
+    }
+
+    .get-started button {
+        height: 55px;
+        font-size: 25px;
+    }
+
+    /*=======================> Main Page <=============================== */
+
+    .navbar {
+        height: 10vh;
+        width: 100%;
+        background-position: left;
+        position: relative;
+    }
+
+    .nav-logo,
+    .selection,
+    .about,
+    #magnify {
+        display: none;
+    }
+
+    .nav-list-items .search-box {
+        width: 100%;
+        height: 35px;
+        padding-left: 5px;
+    }
+
+    .navbar .language-btn {
+        width: 80px;
+        height: 35px;
+
+    }
+
+    .navbar #hamburger {
+        display: inline-block;
+        position: absolute;
+        top: 35%;
+        margin-left: 3px;
+
+    }
+
+    .nav-list-items {
+        margin-left: 30px;
+    }
+
+    /*=======================> Main Page Side Bar<=============================== */
+
+    .sidebar-main {
+        display: inline-block;
+        position: absolute;
+        background: url("https://images.pexels.com/photos/256318/pexels-photo-256318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        width: 60%;
+        border-radius: 20px;
+        animation: sideToggle 1s;
+        z-index: 1;
+    }
+
+    .sidenav-items {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .sidenav-items a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .sidenav-items li {
+        padding: 20px;
+        font-weight: bold;
+        animation: mymove 3s;
+    }
+
+    .sidebar {
+        width: 0%;
+    }
+
+    @keyframes sideToggle {
+        from {
+            width: 0%;
+        }
+
+        to {
+            width: 60%;
+        }
+    }
+
+    @keyframes mymove {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    /*==========================================Main Section========================================*/
+
+    
+
+    .navbar {
+        position: fixed;
+        top: 1px;
+        z-index: 5;
+    }
+
+    main {
+        margin-top: 100px;
+    }
+
+    .head-viewall{
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+
+    .head-viewall i{
+       margin-left: 10px;
+    }
+
+    .head-viewall a {
+        text-decoration: none;
+    }
+
+    .head-viewall h3{
+        margin-top: -5px;
+     }
+    .special-dishes-div{
+        margin: auto;
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        /* overflow: auto;
+        white-space: nowrap; */
+        
+        /* background-color: #e1e7f3; */
+    }
+
+    .special-title{
+        font-weight:bolder;
+        font-size: 1.5rem;
+    }
+
+
+    .special-dish{
+        margin-top: 10px;
+        width: 40%;
+        border-radius: 10px;
+        background-color: white;
+        padding: 10px;
+    }
+
+    .special-dish .special-dish-image {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+
+    .special-dish-2 {
+        display: none;
+    }
+
+   
+
+    .footer ol{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        list-style: none;
+        font-size: large;
+        font-weight: bold;
+    }
+
+    .footer button {
+        width: 40%;
+        height: 2rem;
+        background-color: #f4f5f7;
+        border-style: none; 
+        border-radius: 5px;
+        font-weight: bold;
+        margin-left: 20px;
+        font-size: medium;
+    }
+
+    /*===============================>All Dishes Page<=========================================*/
+
+    #back-arrow {
+        display: block;
+        font-size: 2rem;
+        margin-left: 1.5rem;
+        position: sticky;
+        top: 90px;
+        background-color: #f4f5f7;
+        
+    }
+    #alldishes-back{
+        text-decoration: none;
+    }
+    /*===============================Single Dish<================================================*/
+
+    .img-ingredients {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dish-image{
+        width: 100%;
+        padding: 20px;
+        background-color: #f4f5f7; 
+        position: sticky;
+        top: 90px;
+       
+    }
+
+    .dish-image i {
+        display: inline-block;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        
+    }
+
+    .image-dish {
+        width: 100%;
+    }
+    
+    .ingredients-information{
+        width: 100%;
+        padding: 10px;
+    }
+}

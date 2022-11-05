@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Pakkruti</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <i id="hamburger" class="fa-solid fa-bars"></i>
+            <div class="nav-image">
+                <img class="nav-logo" src="logo.png">
+            </div>
+
+            <div class="nav-list-items">
+                <ul>
+                    <li class="selection"><select name="recipe" id="recipe" onclick="navFunction()">
+                            <option id="recipe-change" value="volvo" selected>Recipe</option>
+                            <option id="breakfast" value="breakfast">BreakFast</option>
+                            <option id="lunch" value="lunch">Lunch</option>
+                            <option id="dinner" value="dinner">Dinner</option>
+                        </select></li>
+                    <li>
+                        <i id="magnify" class="fa-solid fa-magnifying-glass"></i>
+                        <input id="searchInputBox" class="search-box" type="search" placeholder="Search">
+                    </li>
+
+                    <li><button id="changeLanguage" class="language-btn" type="button">
+                            भाषा </button></li>
+                    <li id="about" class="about">About Us</li>
+                </ul>
+            </div>
+
+            <div id="sidebar_id" class="sidebar">
+                <ul class="sidenav-items">
+                    <li><i id="cross-mark" class="fa-solid fa-xmark"></i></li>
+                    <a href="allpages.html"><li id="sidebar_today-special">Today's Special</li></a>
+                    <a href="allpages.html"><li id="sidebar_breakfast">BreakFast</li></a>
+                    <a href="allpages.html"><li id="sidebar_lunch">Lunch</li></a>
+                    <a href="allpages.html"><li id="sidebar_dinner">Dinner</li></a>
+                    <li id="sidebar_aboutUs">About Us</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="head-viewall">
+            <h3 class="special-title">Today's Special Recipe</h3><a href="allpages.html"><h5 class="view">View all<i class="fa-solid fa-arrow-right"></i></h5></a>
+        </div>
+        <div class="special-dishes-div">
+            <div class="special-dish">
+                <img class="special-dish-image" src="Cheese Pakoda.jpg">
+                <b>Cheese Pakoda</b>
+            </div>
+            <div class="special-dish">
+                <img class="special-dish-image" src="Masala Sambhar.jpg">
+                <b>Masala Sambhar</b>
+            </div>
+
+            <div class="special-dish-2">
+                <img class="special-dish-image" src="Cheese Pakoda.jpg">
+                <b>Cheese Pakoda-2</b>
+            </div>
+            <div class="special-dish-2">
+                <img class="special-dish-image" src="Masala Sambhar.jpg">
+                <b>Masala Sambhar-2</b>
+            </div>
+        </div><br>
+        <hr><br>
+
+        <div class="head-viewall">
+            <h3 class="special-title">Breakfast</h3><a href="allpages.html"><h5 class="view">View all<i class="fa-solid fa-arrow-right"></i></h5></a>
+        </div>
+        <div class="special-dishes-div">
+            <div class="special-dish">
+                <img class="special-dish-image" src="Chapati.jpg">
+                <b>Stuffed Onion Paratha</b>
+            </div>
+            <div class="special-dish">
+                <img class="special-dish-image" src="Samosa.jpg">
+                <b>Crispy Samosa</b>
+            </div>
+
+            <div class="special-dish-2">
+                <img class="special-dish-image" src="Chapati.jpg">
+                <b>Stuffed Onion Paratha-2</b>
+            </div>
+            <div class="special-dish-2">
+                <img class="special-dish-image" src="Samosa.jpg">
+                <b>Crispy Samosa-2</b>
+            </div>
+        </div><br>
+        <hr><br>
+
+        <div class="head-viewall">
+            <h3 class="special-title">Lunch</h3><a href="allpages.html"><h5 class="view">View all<i class="fa-solid fa-arrow-right"></i></h5></a>
+        </div>
+        <div class="special-dishes-div">
+            <div class="special-dish">
+                <img class="special-dish-image" src="Chick-Peas Rice.jpg">
+                <b>Chick-Peas Rice</b>
+            </div>
+            <div class="special-dish">
+                <img class="special-dish-image" src="PavBhaji.jpg">
+                <b>Pav-Bhaji</b>
+            </div>
+
+            <div class="special-dish-2">
+                <img class="special-dish-image" src="Chick-Peas Rice.jpg">
+                <b>Chick-Peas Rice-2</b>
+            </div>
+            <div class="special-dish-2">
+                <img class="special-dish-image" src="PavBhaji.jpg">
+                <b>Pav-Bhaji-2</b>
+            </div>
+        </div><br>
+        <hr><br>
+
+        <div class="head-viewall">
+            <h3 class="special-title">Dinner</h3><a href="allpages.html"><h5 class="view">View all<i class="fa-solid fa-arrow-right"></i></h5></a>
+        </div>
+        <div class="special-dishes-div">
+            <div class="special-dish">
+                <img class="special-dish-image" src="Chapati.jpg">
+                <b>Stuffed Onion Paratha</b>
+            </div>
+            <div class="special-dish">
+                <img class="special-dish-image" src="Samosa.jpg">
+                <b>Crispy Samosa</b>
+            </div>
+
+            <div class="special-dish-2">
+                <img class="special-dish-image" src="Chapati.jpg">
+                <b>Stuffed Onion Paratha-2</b>
+            </div>
+            <div class="special-dish-2">
+                <img class="special-dish-image" src="Samosa.jpg">
+                <b>Crispy Samosa-2</b>
+            </div>
+        </div><br>
+        
+    </main>
+
+    <footer>
+        <div class="footer">
+            <ol>
+            <li>Designed my logo with <a href="https://www.freelogodesign.org/"><button>Freelogodesign</button></a></li><br>
+            <li>Design inspired by <a href="https://dribbble.com/"><button>Dribbble</button></a></li><br>
+            <li>Free images by <a href="https://www.pexels.com/"><button>Pexels</button></a></li><br>
+            <li>Developed by me. Github Profile: <a href="https://github.com/nishant1288"><b>https://github.com/nishant1288</b></a></li>
+            </ol>
+        </div><br>
+        <hr>
+    </footer>
+
+    <script src="function.js"></script>
+</body>
+
+</html>

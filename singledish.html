@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakkruti</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <i id="hamburger" class="fa-solid fa-bars"></i>
+            <div class="nav-image">
+                <img class="nav-logo" src="logo.png">
+            </div>
+
+            <div class="nav-list-items">
+                <ul>
+                    <li class="selection"><select name="recipe" id="recipe" onclick="navFunction()">
+                        <option id="recipe-change" value="recipe" selected>Recipe</option>
+                        <option id="breakfast" value="breakfast">BreakFast</option>
+                        <option id="lunch" value="lunch">Lunch</option>
+                        <option id="dinner" value="dinner">Dinner</option>
+                    </select></li>
+                    <li>
+                        <i id="magnify" class="fa-solid fa-magnifying-glass"></i>
+                        <input id="searchInputBox" class="search-box" type="search" placeholder="Search">
+                    </li>
+
+                    <li><button id="changeLanguage" class="language-btn" type="button">
+                            भाषा </button></li>
+                    <li id="about" class="about">About Us</li>
+                </ul>
+            </div>
+
+            <div id="sidebar_id" class="sidebar">
+                <ul class="sidenav-items">
+                    <li><i id="cross-mark" class="fa-solid fa-xmark"></i></li>
+                    <a href="allpages.html"><li id="sidebar_today-special">Today's Special</li></a>
+                    <a href="allpages.html"><li id="sidebar_breakfast">BreakFast</li></a>
+                    <a href="allpages.html"><li id="sidebar_lunch">Lunch</li></a>
+                    <a href="allpages.html"><li id="sidebar_dinner">Dinner</li></a>
+                    <li id="sidebar_aboutUs">About Us</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="img-ingredients">
+            <div class="dish-image">
+                <a href="allpages.html"><i class="fa-solid fa-arrow-left"></i></a>
+                <img class="image-dish" src="Chapati.jpg">
+                <h1>Stuffed Onion Paratha</h1>
+            </div>
+
+            <div class="ingredients-information">
+              
+                <h3>Ingredients</h3>
+                <p> Atta flour,
+                    Ajwain,
+                    Water,
+                    Onion,
+                    Cilantro,
+                    Ghee,
+                    Cumin seeds,
+                    Hing,
+                    Red Chilli Powder,
+                    Ground Coriander,
+                    Turmeric,
+                    Garam Masala</p><br><hr>
+                <h3>Recipe</h3>
+                <p>To make the dough, combine flour, ajwain/carom seeds and water little bit at a time and knead into a
+                    smooth dough. The dough should be smooth but not sticky. Let dough rest for 20-30 minutes before
+                    stuffing. Resting helps to relax the dough so it is easier to stretch and roll out.</p>
+                <p>There are two ways to stuff the paratha. I tend to lean towards method 1 since it helps ensure
+                    the centre of the final paratha is stuffed evenly. In my experience, sealing the dough in method
+                    2 creates a thicker centre which pushes the stuffing out. </p>
+                Finely chop the onions and fresh cilantro.
+
+                Heat a pan on medium heat and add olive oil/ghee. Add cumin seeds and hing and cook until
+                aromatic.
+
+                Add onions and a pinch of salt and saute for a few minutes. Add red chili powder, ground
+                coriander and turmeric. Mix well and saute for 5-10 minutes or until the onions turn soft.
+
+                Once the onions are soft, add garam masala and cilantro and mix well, turn off the heat and set
+                aside in a bowl to cool down completely.</p>
+                <p>Divide the dough into 8-12 equal portions. Working with two portions at a time, roll dough out
+                    into 4 inch disks.
+
+                    Add a spoonful onion mix in the centre of one disk and cover with the second disk.
+
+                    Press gently to seal the edges and using a rolling pin, roll out into a thin disk, careful not
+                    to break the seal.</p>
+                <p>Divide the dough into 4-6 equal portions. Working with one portion at a time, roll dough out into
+                    a 4 inch disk.
+
+                    Add a spoonful of onion mix to the centre of the disk, and seal around the edges of the disk.
+                    This will resemble a dumpling.
+
+                    Gently press down, lightly dust flour onto the dough, and roll out into a thin disk</p>
+                <p>Heat a pan/tawa on medium high heat and place your paratha. Cook for a minute or two or until you
+                    have brown spots on the underside.
+
+                    Flip the paratha and cook other side. While it cooks, spread some ghee on top of the paratha and
+                    around its edges.
+
+                    Enjoy plain or with your favourite curry!</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <ol>
+            <li>Designed my logo with <a href="https://www.freelogodesign.org/"><button>Freelogodesign</button></a></li><br>
+            <li>Design inspired by <a href="https://dribbble.com/"><button>Dribbble</button></a></li><br>
+            <li>Free images by <a href="https://www.pexels.com/"><button>Pexels</button></a></li><br>
+            <li>Developed by me. Github Profile: <a href="https://github.com/nishant1288"><b>https://github.com/nishant1288</b></a></li>
+            </ol>
+        </div><br>
+        <hr>
+    </footer>
+
+    <script src="function.js"></script>
+</body>
+
+</html>
